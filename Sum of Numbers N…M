@@ -1,0 +1,10 @@
+function solve(...arg) {
+    const num1 = Number(arg[0])
+    const num2 = Number(arg[1])
+    let counter=0
+    for (let index = num1; index < num2+1; index++) {
+        counter+=index
+        
+    }
+    return counter
+}
