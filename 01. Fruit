@@ -1,0 +1,6 @@
+function solve(...arr) {
+    const fruit = arr[0]
+    const weight = arr[1] / 1000
+    const price = arr[2]
+    console.log('I need $' + (price * weight).toFixed(2) + ' to buy ' + weight.toFixed(2) + ' kilograms ' + fruit + '.')
+}
