@@ -1,0 +1,19 @@
+function action(a, b, c) {
+    var steps = Number(a)
+        , footprint = b
+        , speed = c / 3.6
+    let distance = steps * footprint
+    let time = distance / speed
+    time += parseInt(distance / 500) * 60
+    let h_time = parseInt(time / 3600)
+    time -= h_time * 3600
+    let m_time = parseInt(time / 60)
+    time -= m_time * 60
+    let hour = ''
+    let minute = ''
+    let second = ''
+    if (h_time < 10) { hour = '0' + h_time } else { hour = h_time }
+    if (m_time < 10) { minute = '0' + m_time } else { minute = m_time }
+    if (time < 10) { second = '0' + time } else { second = Math.round(time)}
+    console.log(`${hour}:${minute}:${second}`)
+}
