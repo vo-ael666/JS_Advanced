@@ -1,0 +1,16 @@
+function solve(...arg) {
+    const num1 = arg[0]
+    const num2 = arg[1]
+    const num3 = arg[2]
+    let number
+    if (num1 > num2 && num1 > num3) {
+        number = num1
+    }
+    else if (num2 > num1 && num2 > num3) {
+        number = num2
+    }
+    else if (num3 > num1 && num3 > num2) {
+        number = num3
+    }
+    console.log('The largest number is ' + number + '.')
+}
