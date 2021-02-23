@@ -1,0 +1,9 @@
+function solve(input){
+    let n=5
+    if (input!=undefined) {
+        n=input
+    }
+    for (let index = 0; index < n; index++) {
+        console.log('* '.repeat(n));        
+    }
+}
