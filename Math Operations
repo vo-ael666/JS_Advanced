@@ -1,0 +1,14 @@
+function solve(...arg) {
+    const num1 = arg[0]
+    const num2 = arg[1]
+    const operator = arg[2]
+    let result
+    switch (operator) {
+        case '+': result = num1 + num2; break
+        case '-': result = num1 - num2; break
+        case '*': result = num1 * num2; break
+        case '/': result = num1 / num2; break
+        case '%': result = num1 % num2; break
+        case '**': result = num1 ** num2; break
+    }
+    console.log(result)
